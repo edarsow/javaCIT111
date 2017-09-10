@@ -63,4 +63,24 @@ public class carFob {
         System.out.println(numdoors + " doors unlocked on vehicle " + vehicleId +
                 "using frequency " + broadFreq);
     } // close unlock
+    
+     /**
+     * ***** NOW YOU TRY!! *******
+     * Using the above code as a template, create a method called lock
+     * which changes the value of doorsLocked to 'true' and prints out the
+     * status to the user.
+     * Once you write the method below, call that method from main()
+     */
+    
+    // Your lock() method here
+    
+    /**
+     * TASK 2
+     * Create a method called soundAlarm() which takes no parameters
+     * and toggles the car alarm when called. You'll also neeed to add
+     * a member variable with this declration:\
+     * private static int soundAlarm(){...} 
+     * 
+     * // your soundAlarm() method here
+     */
 } // close class CarFob
