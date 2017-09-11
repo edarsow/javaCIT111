@@ -12,7 +12,7 @@ import java.util.Scanner;
  * the device given a broadcast frequency and a vehicle identifier
  * @author Eric Darsow
  */
-public class carFob {
+public class CarFob {
     
     // Marked private to prevent other classes from tinnkering with these variables
     // These two member variables are accessible to any method in this class
