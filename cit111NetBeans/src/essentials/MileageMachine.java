@@ -27,7 +27,7 @@ public class MileageMachine {
         int milesDriven = endingOdometer - startingOdometer;
 
         // fuel costs = (miles driven) / (price per mile)
-        double totalFuelCosts = milesDriven / pricePerMile;
+        double totalFuelCosts = (milesDriven / MAZDA_MILES_PER_GALLON) * FUEL_PRICE_2017;
         
         System.out.println("Driving " + milesDriven + " miles costs " 
                 + totalFuelCosts + " dollars");
