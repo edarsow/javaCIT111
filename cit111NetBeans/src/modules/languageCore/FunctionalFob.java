@@ -1,8 +1,5 @@
-package essentials;
+package modules.languageCore;
 
-// This is an unncesary import since all classes in java.lang are imported
-// automatically and are known as the standard library
-import java.lang.*;
 // Import the Scanner class from java.util to access the keyboard input
 import java.util.Scanner;
 
@@ -12,7 +9,7 @@ import java.util.Scanner;
  * the device given a broadcast frequency and a vehicle identifier
  * @author Eric Darsow
  */
-public class CarFob {
+public class FunctionalFob {
     
     // Marked private to prevent other classes from tinnkering with these variables
     // These two member variables are accessible to any method in this class
@@ -65,23 +62,66 @@ public class CarFob {
     } // close unlock
     
     /**
-     * ***** NOW YOU TRY!! *******
-     * Using the above code as a template, create a method called lock
-     * which changes the value of doorsLocked to 'true' and prints out the
-     * status to the user.
-     * Once you write the method below, call that method from main()
+    * TASK 1: SETUP METHODS
+    * SKILL: 
+     * Using the above code as a template, create all necessary method declarations and
+     * code blocks to implment the following functions of our FOB. Note the input and 
+     * out parameters for each method
+     * - Unlock - Takes an int representing the number of doors to unlock.
+     *            Print a confirmation of action. Returns nothing. 
+     * - Lock   - Takes no parameters and automatically unlocks all doors.
+     *            Prints a confirmation to the screen
+     * - Sound Alarm
+     *          - Takes no parameters and simply prints out alarm like 
+     *          - strings. Doesn't reutrn anything.
+     * - PopHatch
+     *          - Takes no parameters and prints pop-like text to the console
      */
     
-    // Your lock() method here
+    // Your methods here
     
     /**
-     * TASK 2
+     * HINT: 
      * Create a method called soundAlarm() which takes no parameters
      * and toggles the car alarm when called. You'll also neeed to add
      * a member variable with this declration:\
      * 
      * private static int soundAlarm(){...} 
      * 
-     * // your soundAlarm() method here
      */
+    
+    /**
+     * TASK 2: WORKING WITH MEMBER VARIABLES
+     * SKILLS: Creating and adjusting member variables
+     * We want the car FOB to know the status of each of it's car functions.
+     * Now that you have methods to go with each of the four functions 
+     * of the device, create member variables of the appropriate type
+     * which represent the following pieces of information:
+     * - How many doors are LOCKED
+     * - The status of the alarm system (armed, off, and sounding)
+     * - The status of the hatch: open or closed (makea boolean called isOpen)
+     * 
+     * Once your member variables are in place, adjust the methods so that
+     * each method adjusts the "setting" in each of the member variables.
+     * So the soundAlarm method should change the status of the member variables 
+     * representing the security system is in the state of "sounding"
+     * 
+     * Demonstrate the performance of each of these methods by making
+     * calls to each in main(). Screen shot the output.
+     */
+    
+    /**
+     * TASK 3: CLEANING UP THE CLASS TO USE OUR NEW METHODS
+     * SKILL: Refactoring (change the structure of) code
+     * We have four methods that each toggle their member variables
+     * and can be called by any other method. 
+     * 
+     * We want to demosntrate how each method is called from main and it adjusts
+     * the value of relevant member variables. During program runtime, 
+     * we want calls to println() made from main to display all the member variables'
+     * current state. We should do thisby including println() calls BEFORE and 
+     * AFTER FOB methods are called .
+     * 
+     */
+    
 } // close class CarFob
