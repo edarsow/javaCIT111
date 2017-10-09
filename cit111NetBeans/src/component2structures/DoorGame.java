@@ -1,4 +1,4 @@
-package structures;
+package component2structures;
 
 import java.util.Scanner;
 

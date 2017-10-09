@@ -1,4 +1,4 @@
-package structures;
+package component2structures;
 
 import java.util.Scanner;
 
@@ -89,8 +89,12 @@ public class GeometricShapes {
      * @return the area of the trapezoid
      */
     public static double calcAreaOfTrapezoid(double b1, double b2, double height){
+        
+        
         // implements the formula for the area of a trapezoid
         double trapArea = (0.5) * (b1 + b2) * height;
+        
+        
         // send the area back to the calling method
         return trapArea;
     } // close method

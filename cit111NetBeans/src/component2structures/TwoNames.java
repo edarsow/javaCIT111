@@ -1,5 +1,5 @@
 
-package structures;
+package component2structures;
 
 /**
  * Code to illustrate core concepts related to calling methods with parameters
