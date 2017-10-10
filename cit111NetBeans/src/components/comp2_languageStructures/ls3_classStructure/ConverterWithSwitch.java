@@ -26,7 +26,7 @@ public class ConverterWithSwitch {
         System.out.println("Now enter a value to be converted:");
         double valueToConvert = scan.nextDouble();
         
-        
+        // this switch mathes the int userChoice with the case numbers: 1,2, and 3
         switch(userChoice){
             case 1: System.out.println(convertDucksToYaks(valueToConvert) + " yaks");
                     break;
@@ -36,7 +36,7 @@ public class ConverterWithSwitch {
              
             case 3: System.out.println(convertBangsToBucks(valueToConvert) + " bucks");
                     break;
-        }
+        } // close switch
         
         System.out.println("Total Conversions: " + numberConverstionsProcessed);
         

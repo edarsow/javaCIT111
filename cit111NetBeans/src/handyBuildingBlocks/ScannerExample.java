@@ -1,4 +1,4 @@
-package handyComponents;
+package handyBuildingBlocks;
 
 import java.util.Scanner;
 
