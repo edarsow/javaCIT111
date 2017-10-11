@@ -22,4 +22,21 @@ package components.comp1_languageCore.project;
  */
 public class FundamentalsProjectSkeleton {
     
+    /*
+    * PART 1: Declare member variables here. Use member variables for any value
+    * that you wish to share among methods--such as the vehicle ID on our 
+    * CarFob class.
+    */
+    
+    // code part 1 here
+    
+    
+    /*
+    * PART 2: Declare a main(String[] args) method here. Don't put much in here
+    * until you have methods that do something. You'll test those methods here
+    * and work with user input once there is something for the user to input
+    */
+    
+    
+    
 }
