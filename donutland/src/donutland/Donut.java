@@ -1,9 +1,17 @@
-package components.comp3_objects.oop1_javadonuts;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package donutland;
 
-
+/**
+ *
+ * @author delores
+ */
 public class Donut {
     
-    // member variables
+     // member variables
     private int percRemaining = 100;
     public String name;
     
@@ -17,7 +25,4 @@ public class Donut {
         return percRemaining;
     } // close method
     
-} // close class
-
-
-
+}

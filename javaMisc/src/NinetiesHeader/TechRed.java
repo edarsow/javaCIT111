@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javamisc;
+package NinetiesHeader;
 
 /**
  *
  * @author delores
  */
-public class JavaMisc {
-
-    /**
-     * @param args the command line arguments
-     */
+public class TechRed {
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println();
+        System.out.println("******* Technology Rediscovery *******");
+        System.out.println(">>>>>>>  courses and projets   >>>>>>>");
+        System.out.println();
+        
     }
     
 }

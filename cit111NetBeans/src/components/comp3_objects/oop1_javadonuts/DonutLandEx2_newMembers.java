@@ -7,7 +7,7 @@ package components.comp3_objects.oop1_javadonuts;
 public class DonutLandEx2_newMembers {
     
         static final int FURRY_ANIMAL_BITE_SIZE = 10;
-        static final int WATERY_ANIMAL_BITE_SIZE = 25;
+        static final int WATERY_ANIMAL_BITE_SIZE = 15;
    
     public static void main(String[] args){
         Donut firstDonut = new Donut();
