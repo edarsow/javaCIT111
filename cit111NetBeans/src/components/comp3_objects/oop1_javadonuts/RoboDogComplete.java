@@ -57,4 +57,20 @@ public class RoboDogComplete {
             return false;
         } // close if/else
     } // close method
+    
+   /**
+    * Simulates the RoboDog eating a Donut object
+    * @param donut the donut to eat
+    * @param percToEat the amount of the associated Donut to eat
+    */
+    public void eatDonut(Donut donut, int percToEat){
+
+        donut.simulateEating(percToEat);
+        System.out.println("Robodog just ate " + percToEat + " percent of a donut!");
+        
+    } // close method
+    
+    
+    
+    
 } // close class

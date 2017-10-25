@@ -15,7 +15,7 @@ public class PowerSupply {
     // member variables
     public boolean isOn;
     private double currentDraw;
-    private double currentVoltage;
+    private double voltsOut;
     private boolean isOverheating;
 
     /**
@@ -32,18 +32,21 @@ public class PowerSupply {
      * @param currentLoss the amount of current reduction
      * @return the current current draw
      */
-    public double dropCurrent(double currentLoss){
+    public double reduceCurrent(double currentLoss){
         // write my guts
     }
     
     /**
-     * Accessor method for setting output voltage
-     * @param volts volts to set the supply's output
+     * Accessor method for getting output voltage
+     * Use the V=IR relationship to calculate the
+     * votlage drop across the supply if there is a given
+     * current and a passed in resistance
+     * @param resistance the resistance of the load in the circuit
+     * @return the current voltage across the supply with a current and resistance
      */
-    public void setCurrentVoltage(double volts){
+    public int getOutputVoltage(int resistance){
         // write my guts
     }
-    
     /**
      * Checking if the power supply is overheating
      * @return true = overheating, false = not overheating
