@@ -50,14 +50,13 @@ public class DogLandComplete {
         boolean heardCall = viciousDog.listenForCall(dist);
         System.out.println("Did " + viciousDog.name  + " hear a call " +  dist 
                 + " meters away? "+ heardCall);
+        System.out.println();
+        System.out.println();
         
         
         // ** Test our eatDonut() method **
         // make a Donut!
         Donut donutForRobodog = new Donut();
-        
-        System.out.println();
-        System.out.println();
         
         // and print out the percent remaining -- should be 100
         System.out.println("**** TESTING EATDONUT METHOD ****");

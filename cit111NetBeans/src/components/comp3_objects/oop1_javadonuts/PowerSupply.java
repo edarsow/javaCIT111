@@ -25,6 +25,8 @@ public class PowerSupply {
      */
     public double drawMoreCurrent(double currentGain){
         // write my guts
+        
+        return 1.0; // change me
     }
     
     /**
@@ -34,6 +36,8 @@ public class PowerSupply {
      */
     public double reduceCurrent(double currentLoss){
         // write my guts
+        
+        return 1.0; // change me
     }
     
     /**
@@ -46,6 +50,8 @@ public class PowerSupply {
      */
     public int getOutputVoltage(int resistance){
         // write my guts
+        
+        return 1;
     }
     /**
      * Checking if the power supply is overheating
@@ -53,6 +59,8 @@ public class PowerSupply {
      */
     public boolean getTempStatus(){
         // write my guts
+        
+        return true;
     }
     
     

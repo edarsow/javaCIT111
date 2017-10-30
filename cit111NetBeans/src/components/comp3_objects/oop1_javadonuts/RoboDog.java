@@ -32,6 +32,8 @@ public class RoboDog {
      */
     public boolean findTreasure(){
        // write my guts
+       
+       return true; //change me
     }
     
     /**
@@ -44,6 +46,8 @@ public class RoboDog {
      */
     public boolean listenForCall(int distance){
         // write my guts
+        
+        return true; //change me
        
     }
     
