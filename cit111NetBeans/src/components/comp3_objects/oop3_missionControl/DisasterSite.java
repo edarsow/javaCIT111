@@ -38,7 +38,7 @@ public class DisasterSite {
         // to rescue being the size of the rescue team (1 vicitm: 1 rescuer)
         int couldBeRescued = random.nextInt(team.getTeamSize() + 1);
         
-        // check to make sure more victims were not rescued than existed on the site
+        // We can't rescue more victims than are on site
         if(couldBeRescued <= remainingVictims) {
             numRescued = couldBeRescued;
         } else {
@@ -47,8 +47,9 @@ public class DisasterSite {
             numRescued = remainingVictims;
         }
         
-        // adjust the total number of rescued victims based on this rescue attempt
-        numRescuedVictims = numRescuedVictims + 1;
+        // adjust the total number of rescued victims based on this attempt
+        numRescuedVictims = numRescuedVictims + numRescued;
+        MissionControl.logEvent("Num rescued: " + String.valueOf(numRescuedVictims));
         // ship back the number that were rescued
         return numRescued;
     } // close method
