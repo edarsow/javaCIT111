@@ -49,7 +49,7 @@ public class DisasterSite {
         
         // adjust the total number of rescued victims based on this attempt
         numRescuedVictims = numRescuedVictims + numRescued;
-        MissionControl.logEvent("Num rescued: " + String.valueOf(numRescuedVictims));
+        
         // ship back the number that were rescued
         return numRescued;
     } // close method
