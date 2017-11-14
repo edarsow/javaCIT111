@@ -1,25 +1,31 @@
-/*
- * Copyright (C) 2017 delores
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+
 package components.comp3_objects.project;
 
 /**
- *
- * @author delores
+ * A skeleton class that models the functionality of a Fog machine
+ * @author Technology Rediscovery
  */
 public class FogMachine {
     
-}
+    final int MAX_FLUID_ML = 400;
+    private int currentFluidLevel = 0;
+    // more member variables here
+    
+    // NO MAIN method in the "blueprint" class
+    
+    public double getFluidLevelPercent(){
+        
+        // write the guts of this method which calculates
+        // the percent of the fluid remaining in the machine
+        // by dividing the current level by the max level
+        
+        // return a double!
+        return 0.0;
+    } // close method
+    
+    // MORE METHODS HERE!
+    
+    // perhaps something like sprayFog that takes in an integer 
+    // for time to spray
+    
+} // close class
