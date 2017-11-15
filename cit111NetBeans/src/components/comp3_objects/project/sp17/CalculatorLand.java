@@ -5,7 +5,7 @@ import java.io.*;
 class Calculator
 {
     
-    private String calcName = "ti98.1.2.69dogo";
+    final String CALC_NAME = "ti98.1.2.69dogo";
     private int varAmount;
     private double answer;
     double[] nums ;
