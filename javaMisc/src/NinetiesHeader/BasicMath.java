@@ -9,14 +9,29 @@ public class BasicMath {
         
         result = result + 1;
         
-        System.out.println(result);
-    }
+        // output is 19
+        System.out.println("First Result: " + result);
+               
+        int secondResult = doTrickierMath(result, b);
+        // output is 98
+        System.out.println("Second Result: " + secondResult);
+        
+    } // close main
     
     public static int doMath(int x, int y){
         
         return ((x + 2) * 2) + y;
-    }
-} 
+    } // close doMath
+     
+    public static int doTrickierMath(int r, int q){
+        int temp = Math.abs(r - q) * 3;
+        return doMath(temp, q);
+    } // close doTrickierMath
+} // close class
+
+
+
+
 
 
 

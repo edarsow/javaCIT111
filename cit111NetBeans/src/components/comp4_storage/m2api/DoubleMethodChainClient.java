@@ -14,18 +14,29 @@ public class DoubleMethodChainClient {
     public static void main(String[] args) {
         // create a new instance of class DoubleMethods
         // and store a pointer in doubleMachine
-        
         DoubleMethods doubleMachine = new DoubleMethods();
-        // call methods from class Doublemethods
-        double returnedFromCall1 = 
-                doubleMachine.divideDoubles(FIRST_DOUBLE, SECOND_DOUBLE);
-        double returnedFromCall2 = 
-                doubleMachine.raiseDoubles(FIRST_DOUBLE, returnedFromCall1);
-        double returnedFromCall3 = 
-                doubleMachine.maxOfTwoDoubles(returnedFromCall1, returnedFromCall2);
         
-        System.out.print("The output of call 3: ");
-        System.out.println(returnedFromCall3);
+        double doug = 12.0;
+        double doublin = 3.2;
+        
+        double calPercOut = doubleMachine.calcPercent(doug, doublin);
+        System.out.println("calcPercOut's value is: " + calPercOut);
+        
+        double raisedToLargOut = doubleMachine.raiseToLargestPower(doug, doublin);
+        System.out.println("raiseToLargOut's value is: " + raisedToLargOut);
+        
+        int kwUsed = 92;
+        double computedElecOut = doubleMachine.computeElecCosts(kwUsed);
+        System.out.println("computedElecOut's value is: " + computedElecOut);
+        
+        int kwMonth1 = 33;
+        int kwMonth2 = 88;
+        double billIncOut = doubleMachine.computeBillIncrease(kwMonth1, kwMonth2);
+        System.out.println("billIncOut's value is: " + billIncOut);
         
     } // close main
+    
 } // close class
+
+
+

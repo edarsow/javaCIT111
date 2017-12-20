@@ -18,12 +18,12 @@ public class IntegerMethodChainClient {
         
         // call all methods on IntegerMethods and manipulate the returned
         // values by passing them to other methods
-        int returnedValFromCall1 = 
-                integerConverter.transformWithAddition(STARTING_INT);
-        int returnedValFromCall2 = 
-                integerConverter.transformWithMultiplication(returnedValFromCall1);
-        int returnedValFromCall3 = 
-                integerConverter.transformWithSubtraction(returnedValFromCall2);
+        int returnedValFromCall1 = integerConverter.add(STARTING_INT);
+        
+        int returnedValFromCall2 = integerConverter.multiply(returnedValFromCall1);
+        
+        int returnedValFromCall3 = integerConverter.subtract(returnedValFromCall2);
+        
         System.out.print("The output of call 3 is: ");
         // output result of method chains:
         System.out.println(returnedValFromCall3);

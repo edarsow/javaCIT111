@@ -7,19 +7,39 @@ package components.comp4_storage.m2api;
  */
 public class IntegerMethods {
     
-    public int transformWithAddition(int input){
-        int tempStorage = input + 10;
+    /**
+     * Adds an arbitrary (meaningless) value to an inputted value
+     * @param valToAdd the value to which the amount is to be added
+     * @return the transformed integer value
+     */
+    public int add(int valToAdd){
+        int tempStorage = valToAdd + 10;
         return tempStorage;
     }
     
-    public int transformWithMultiplication(int input){
-        int tempStorage = input * 3;
+    /**
+     * Multiplies an arbitrary value to an inputted value
+     * @param valToMult the value to multiply
+     * @return the transformed integer value
+     */
+    public int multiply(int valToMult){
+        int tempStorage = valToMult * 3;
         return tempStorage;
     }
     
-    public int transformWithSubtraction(int input){
-        int tempStorage = input - 12;
+    /**
+     * Subtracts an arbitrary value from an inputted value
+     * @param valToSubtractFrom the int from which to subtract
+     * @return the transformed integer value
+     */
+    public int subtract(int valToSubtractFrom){
+        int tempStorage = valToSubtractFrom - 12;
         return tempStorage;
     }
     
-}
+} // close class
+
+
+
+
+
