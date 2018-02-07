@@ -1,5 +1,5 @@
 
-package components.comp1_languageCore.lc1_primitivesAndVars;
+package components.chunk1_languageCore.m1EssentialElements;
 
 import java.util.Scanner;
 
