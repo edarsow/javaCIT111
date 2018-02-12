@@ -17,9 +17,13 @@
 package components.chunk1_languageCore.m1EssentialElements;
 
 /**
- *
- * @author delores
+ * A program only designed to sit at the top of a page.
+ * @author Eric Darsow
  */
 public class TitleBar {
-    
+    public static void main(String[] args) {
+        System.out.println("This is your first Java Module!");
+        System.out.println("If you read me and do what I ask, you'll"
+                + "Soak up a lot of Java, and become a programmer");
+    }
 }

@@ -18,12 +18,19 @@ package components.chunk1_languageCore.m1EssentialElements;
 
 
 
-
+/*
+This class demonstrates simple printing to the console
+*/
 public class Greeting {
     
+// the compiler starts exeucting a program in the main method
     public static void main(String[] args) {
-        
+    
+        // these lines call a method called println() and sends data
+        // to the console for display to the user
         System.out.println("Hey, I'm Xan");
         System.out.println("And today is a cloudy Wednesday");
-    }
-}
+        
+    } // can use line comments to mark the end of blocks, like this end to main
+    
+} // this rigth facing curly brace closes the class

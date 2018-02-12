@@ -21,14 +21,16 @@ package components.chunk1_languageCore.m1EssentialElements;
  * and basic operators
  * @author Eric Darsow
  */
-public class InvoiceCalculations {
+
+
+public class InvoiceCalculations { // this line opens a block: just a { and no ;
     
-    public static void main(String[] args) {
-        System.out.println("Purchase Invoice Calculations");
+    public static void main(String[] args) { // opens a method with {
+        System.out.println("Invoice Calculations"); // statement -- ends with ;
         
-        String item1Name = "Stuffed Llama";
-        double item1Cost = 45.44;
-        int item1Quantity = 3;
+        String item1Name = "Stuffed Llama"; // statement ends with ;
+        double item1Cost = 45.44; // statement ends with ;
+        int item1Quantity = 3; // statement ends with ;
         
         String item2Name = "Digital to Analog Audio Converter";
         double item2Cost = 36.50;
