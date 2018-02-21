@@ -17,24 +17,22 @@
 package week3Online;
 
 /**
- *
+ * A class to explore how comparison operators and if-controlled blocks function.
  * @author delores
  */
-public class ArithmeticDemo {
+public class Comparisons {
     
-    public static void main(String[] args){
+    public static void main(String[] args) {
         
-        // demonstrate addition operator
-        int result = 1 + 2;
-        // result is now 3
-        System.out.println("1 + 2 = " + result);
-        int original_result = result;
+        // create an initialize two int-type variables
+        int correctPasscode = 5934;
+        int attemptedPasscode = 1234;
         
-        result = result - 1;
-        // result is now 2
-        System.out.println(original_result + " - 1 = " + result);
-        original_result = result;
-        
-    }// close main
-    
-} // close class
+        // compare correctPasscode to attemptedPasscode
+        if(attemptedPasscode == correctPasscode){
+            System.out.println("Codes Match! You're in!");
+        } else {
+            System.out.println("Codes don't match -- no soup for you!");
+        } // close if/else blocks
+    } // close main method
+} // close class Comparisons
