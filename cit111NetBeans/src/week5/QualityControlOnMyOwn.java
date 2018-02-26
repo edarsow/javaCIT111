@@ -15,7 +15,7 @@ public class QualityControlOnMyOwn {
     public static void main(String[] args){
         final int QUALITY_TRESHOLD = 65;
         final int MAX_QUALITY = 100;
-        final int UNITS_TO_MAKE = 10000;
+        final int UNITS_TO_MAKE = 5;
 
         int unitQuality = 0;
         int totalFailures = 0;
