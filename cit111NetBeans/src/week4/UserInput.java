@@ -20,13 +20,13 @@ import java.util.Scanner;
 
 /**
  * Demonstrates the functionality of a Scanner object and how to use it to
- * gather input from the user
+ * gather input from the user 
  * @author Eric Darsow
  */
 public class UserInput {
     public static void main(String[] args) {
         // this is a "final variale" to store the tax rate
-        final double SALES_TAX = 0.07;
+        final double SALES_TAX = 0.07; 
         
         // declare double-type variables
         double salePrice;

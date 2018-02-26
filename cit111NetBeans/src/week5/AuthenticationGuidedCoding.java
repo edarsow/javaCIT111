@@ -1,5 +1,5 @@
 
-package components.comp1_languageCore.lc3_controlOfFlow;
+package week5;
 
 import java.util.Scanner;
 
@@ -10,14 +10,14 @@ import java.util.Scanner;
  * that are acceptable before the program terminates.
  * @author [YOUR NAME HERE] 
  */
-public class Authentication {
+public class AuthenticationGuidedCoding {
     // EXAMPLE: create a private final static String constant called
     // PASSWORD to store the password
     // assign your chosen password to this final constant
     private final static String PASSWORD = "p@ssword";
 
     // create a private final static String constant called
-    // FORTUNE to store the
+    // SECRET to store the
     // sensitive information that can only be accessed with a password
 
 
@@ -52,7 +52,7 @@ public class Authentication {
     
                 // (Inside if{}) Notify the user that the password entered is correct
 
-                 // tell the user his/her fortune
+                 // tell the user his/her secret
                 
                 // thank the user for participating
 
