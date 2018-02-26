@@ -10,7 +10,7 @@ import java.util.Random;
  * of units with randomized quality values;
  * @author Eric Darsow
  */
-public class QualityControl {
+public class QualityControlOnMyOwn {
     
     public static void main(String[] args){
         final int QUALITY_TRESHOLD = 65;
