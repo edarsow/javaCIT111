@@ -14,21 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package week5;
+package week6_basicMethods;
 
 /**
- * Demonstrates the core functions of the while() block
- * @author Eric Darsow
+ * Demonstrates the most essential functionality of a switched block can
+ * also be implemented with if/else chains.
+ * @author delores
  */
-public class SimpleWhile {
+public class BasicSwitchAsIf {
     public static void main(String[] args) {
-        int numLoops = 0;
-
-        // while()-controlled blocks
-        while(numLoops < 10){
-            System.out.println("I'm looping!");
-            numLoops = numLoops + 1;
-        } // close while
-
+        // a hard-coded value to use in if/else chain 
+        final int SELECTOR = 78;
+        
+        // march down chain, looking for matches
+        if(SELECTOR ==1 ){
+                System.out.println("First case selected");
+        } else if(SELECTOR == 2){
+                System.out.println("Second case selected");
+        } else if(SELECTOR == 78){
+                System.out.println("Third case selected");
+        } else {
+            System.out.println("Default case");
+        } // close if/else chain
     } // close main
 } // close class

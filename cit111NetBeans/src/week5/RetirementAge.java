@@ -34,9 +34,15 @@ public class RetirementAge {
         while(true){
             // prompt the user for age
             System.out.println("Enter your age to see if you can retire:");
+            
             // read age from the console and store in variable
             age = inputScanner.nextInt();
+            
+            
+            
             // implement basic if() logic--if they're over 65.5
+            
+            
             if(age > 65.5){
                 // if true
                 System.out.println("Wahoo! Grab the newspaper and martini!");
