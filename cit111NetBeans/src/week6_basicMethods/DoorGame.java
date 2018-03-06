@@ -56,22 +56,22 @@ public class DoorGame {
      * Simulates the opening of door 1
      */
     public static void openDoor1(){
-        System.out.println("EHHHH! Sorry: just a goat");
+        System.out.println("EHHHH! Sorry: just a bio goat");
     } // close method
     
     /**
      * Simulates the opening of door 2
      */
     public static void oepnDoor2(){
-        System.out.println("Hurray! You've won a Java 9000 Series Robot to help you "
-                + "with your every programming need.");
+        System.out.println("Hurray! You've won a G-9000 Series Robotic Goat \n"
+                + "which is superior to bio goats in all possible ways.");
     } // close method
     
     /**
      * Simulates the opening of door 3
      */
     public static void openDoor3(){
-        System.out.println("EHHHH! Sorry: just a goat");
+        System.out.println("EHHHH! Sorry: just a bio goat");
     } // close method
     
 } // close class

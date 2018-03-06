@@ -14,31 +14,40 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package week6_basicMethods;
+package week5;
+
+import java.math.BigInteger;
+import java.util.Random;
 
 /**
- * Demonstration class for the concept of a method in its most basic form
- * @author Eric Darsow
+ *
+ * @author delores
  */
-public class SimpleMethod {
+public class DigitalArt {
+    
+    final static int NUM_LOOPS = 900000;
+    
     public static void main(String[] args) {
-        System.out.println("I'm executing in main.");
         
-        // writing a method call is simple: type the method name
-        printStatement();
-        
-        // put your call to your new method here
-        
-        printStatement();
-        
-    } // close method main
+        // core clock loop works here
+        for(int i = 0; i < NUM_LOOPS; i++){
+            generateBigRandomNum();
+        }
+    }
     
-    //method prints out a prompt phrase to console
-    public static void printStatement(){
-        System.out.println("Where there's a will, there's a way");
+    public static void generateBigRandomNum(){
         
-    } // close printStatement
+        Random random = new Random();
+        // create new BigInteger at a large random value
+        BigInteger bigInt = new BigInteger(100, random);
+        // spit out to console
+        System.out.print(bigInt);
+        System.out.print("           ");
+        
+    }
     
-    // new method goes down here, called generateBigNumber
     
-} // close class
+    
+    
+    
+}
