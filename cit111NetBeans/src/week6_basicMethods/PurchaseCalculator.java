@@ -16,6 +16,8 @@
  */
 package week6_basicMethods;
 
+import java.util.Scanner;
+
 /**
  * Class simulates functionality of a purchase calculator to demonstrate
  * the creation and use of methods that take input parameters
@@ -25,10 +27,27 @@ public class PurchaseCalculator {
     
     public static void main(String[] args) {
         final double ITEM_PRICE = 100.00;
+        double discount  = 0.15;
+        double purchaseLimit;
+        
         System.out.println("Hard-coded price value: $" + ITEM_PRICE);
+        System.out.println("Enter your purchase limit and press enter (no $):");
+        // create a scanner object and point to it with variable s
+        Scanner s = new Scanner(System.in);
+        // read in a double value from the user and store in purchaseLimit
+        purchaseLimit = s.nextDouble();
         
         // call method and pass in a double value as the declaration requires
+        System.out.println("Price with tax:");
         displayPriceWithTax(ITEM_PRICE);
+        double perc = discount * 100;
+        System.out.println("Hard-coded discount of %" + perc);
+        // call method and pass in ITEM_PRICE and discount
+        computePriceAfterDiscount(ITEM_PRICE, discount);
+        
+        // call method and pass in ITEM_PRICE and purchaselimit
+        displayPurchasableNumber(ITEM_PRICE, purchaseLimit);
+        
         
     } // close method main
     
@@ -53,6 +72,22 @@ public class PurchaseCalculator {
         double finalPrice = price - (price * discount);
         System.out.println("Price after discount: $" + finalPrice);
     } // close method
+    
+    
+    
+    /**
+     * Computes the total number of units that can be purchased within a given
+     * spending limit. Uses Math.floor() to "round down" to the nearest 
+     * complete unit that can be purchased and displays the result
+     * @param price the price of the item to be purchased in x quantity
+     * @param limit the amount of money to be spent on x units of item
+     */
+    public static void displayPurchasableNumber(double price, double limit){
+        int numPurchasable = (int) Math.floor(limit / price);
+        System.out.println("With $" + limit 
+                + ", you can buy " + numPurchasable + " units");
+        
+    }
     
     
 } // close class
