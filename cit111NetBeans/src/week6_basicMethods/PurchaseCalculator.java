@@ -56,10 +56,10 @@ public class PurchaseCalculator {
      * @param price the initial purchase price
      */
     public static void displayPriceWithTax(double price){
-        final double TAX_RATE = 0.075;
-        // compute price + tax
-        double totalPrice = price * (1 + TAX_RATE);
-        System.out.println("Total price with tax: $" + totalPrice );
+       
+        
+        
+        
     } // close method displayPriceWithTax
     
     
