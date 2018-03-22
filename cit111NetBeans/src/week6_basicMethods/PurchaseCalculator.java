@@ -39,7 +39,10 @@ public class PurchaseCalculator {
         
         // call method and pass in a double value as the declaration requires
         System.out.println("Price with tax:");
-        displayPriceWithTax(ITEM_PRICE);
+        
+        // call a method and pass in 100.0 as an argument
+        displayPriceWithTax(100.0);
+        
         double perc = discount * 100;
         System.out.println("Hard-coded discount of %" + perc);
         // call method and pass in ITEM_PRICE and discount

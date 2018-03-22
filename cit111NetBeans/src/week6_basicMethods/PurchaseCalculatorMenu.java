@@ -45,6 +45,7 @@ public class PurchaseCalculatorMenu {
      * Computes and displays the inputted price with the tax rate added
      * @param price the initial purchase price
      */
+    
     public static void displayPriceWithTax(double price){
         double totalPrice = price * (1 + TAX_RATE);
         System.out.println("Total price with tax: $" + totalPrice );
