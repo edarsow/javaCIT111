@@ -15,11 +15,9 @@ public class GeometricShapesCubeSimpleCall {
 
     public static void main(String[] args){
            
-        // call calcVolumeOfCube() with the user's side length as an argument
-        double returnedVolume = calcVolumeOfCube(50.0);
-        
-        // print the inputs and the ouputs to the console
-        System.out.println("Volume of a cube: " + returnedVolume);
+        // calls our method inside our call to println()!
+        // it's a neseted method call!
+        System.out.println("Volume of a cube: " + calcVolumeOfCube(50.0));
        
     } // close main method
     

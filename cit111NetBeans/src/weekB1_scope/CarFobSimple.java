@@ -1,4 +1,4 @@
-package week7_scopeAndMemVars;
+package weekB1_scope;
 
 import components.comp2_languageStructures.ls1_basicMethods.*;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package week7_scopeAndMemVars;
+package weekB1_scope;
 
 // This is an unncesary import since all classes in java.lang are imported
 // automatically and are known as the standard library
