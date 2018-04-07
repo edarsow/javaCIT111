@@ -33,7 +33,7 @@ public class ScopeBasics {
         // declaration and initialziation of a local variable to demonstrateScope
         String localScope2 = "I'm local to demonstrateScope";
         
-        System.out.println(localScope1); // localScope1 was declared in main
+        //System.out.println(localScope1); // localScope1 was declared in main
                                          // and cannot be accessed by any other
                                          // method
         System.out.println(classScopedVar); 
@@ -53,7 +53,7 @@ public class ScopeBasics {
         
         System.out.println(localScope1);
         System.out.println(classScopedVar);
-        System.out.println(localScope2); // localScope2 is only accessible in
+        //System.out.println(localScope2); // localScope2 is only accessible in
                                          // the method in which it is declared:
                                          // which is demonstrateScope
                 
