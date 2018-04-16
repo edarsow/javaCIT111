@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Eric Darsow
+ * Copyright (C) 2018 delores
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -14,35 +14,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package components.comp3_objects.oop1_javadonuts;
+package objects1;
 
-/**
- *
- * @author delores
- */
-
-
-public class DogLand {
+public class Salad {
+    public int percRemaining = 100;
+    public boolean containsNuts;
+    public String lettuceType;
+    public boolean vegetarian;
     
-    public static void main(String[] args) {
-        
-        // create a new RoboDog instance
-        // store in pointer: viciousDog
-      
-        
-        // display basic doc stats
-       
+    public void eatSalad(int percEaten){
+        // you write the guts!
+        // subtract eaten amount from percRemaining
+    }
     
-        // test bark()
-       
-        
-        // test findTreasure();
-       
-        
-        // test listenForCall()
-            
-        
+    public void addMeat(){
+        // toggle your vegetarian option to 'true'
+    }
     
-    } // close main()
     
-} // close class
+}
