@@ -14,22 +14,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package objects1;
+package objects_forteacher;
 
-public class Salad {
-    public int percRemaining = 100;
-    public boolean containsNuts;
-    public String lettuceType;
-    public boolean vegetarian;
-    
-    public void eatSalad(int percEaten){
-        // you write the guts!
-        // subtract eaten amount from percRemaining
+/**
+ *
+ * @author delores
+ */
+
+
+
+public class FoodLand {
+    public static void main(String[] args) {
+        
+        Egg eg1 = new Egg();
+        CanOfBeans can1 = new CanOfBeans();
+        int totalProtein = 0;
+        // simulate eating these foods
+        totalProtein = eg1.protein_grams + can1.protein_grams;
+        System.out.println("Total Grams of Protein: " + totalProtein);
     }
-    
-    public void addMeat(){
-        // toggle your vegetarian option to 'true'
-    }
-    
-    
 }

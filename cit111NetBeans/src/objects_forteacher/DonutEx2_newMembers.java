@@ -1,5 +1,5 @@
 
-package objects1;
+package objects_forteacher;
 
 import components.comp3_objects.oop1_javadonuts.*;
 

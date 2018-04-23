@@ -1,7 +1,8 @@
-package objects1;
+package objects2_animals;
 
 import components.comp3_objects.oop1_javadonuts.*;
-import objects1.Donut;
+import objects1_donuts.Donut;
+import objects1_donuts.Donut;
 
 
 public class DonutLandAndAnimals {

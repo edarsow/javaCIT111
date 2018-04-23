@@ -16,9 +16,11 @@
  */
 
 
-package objects1;
+package objects_forteacher;
 
-public class DonutLand_Compressed {
+import objects1_donuts.Donut;
+
+public class DonutLand_NoComments {
     
     public static void main(String[] args){
         final int firstBiteSize = 12;
@@ -27,6 +29,8 @@ public class DonutLand_Compressed {
         firstDonut = new Donut();
         
         firstDonut.name = "Chloe";
+        firstDonut.simulateEating(firstBiteSize);
+        
         
 //        System.out.println("When first created, " + firstDonut.name + "'s\n" 
 //                + "percent remaining is " + firstDonut.getPercRemaining());
@@ -36,7 +40,6 @@ public class DonutLand_Compressed {
 //                "a bite size of " + firstBiteSize);
 //        printDivider();
         
-        firstDonut.simulateEating(firstBiteSize);
         firstDonut.simulateEating(firstBiteSize);
         
         System.out.println("After being eaten, " + firstDonut.name + "'s\n" 
