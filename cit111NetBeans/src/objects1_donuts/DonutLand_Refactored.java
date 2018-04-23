@@ -29,14 +29,15 @@ public class DonutLand_Refactored {
         firstDonut = new Donut();
         
         firstDonut.name = "Chloe";
+        
         // pass our Donut referenced by firstDonut to printObjectData
         printObjectData(firstDonut);
         
         // follow same pattern to make a second Donut object
         Donut secondDonut;
         secondDonut = new Donut();
-        
         secondDonut.name = "Crusoe";
+        
         printObjectData(secondDonut);
         
         // now eat some of each donut and print out the stats

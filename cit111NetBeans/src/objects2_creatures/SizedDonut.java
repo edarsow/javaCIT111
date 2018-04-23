@@ -12,39 +12,28 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-package objects2_animals;
-
-import components.comp3_objects.oop1_javadonuts.*;
-
-/**
- *
- * @author delores
+ * along wdonith this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+package objects2_creatures;
 
-public class DogLand {
+public class SizedDonut {
     
-    public static void main(String[] args) {
-        
-        // create a new RoboDog instance
-        // store in pointer: viciousDog
-      
-        
-        // display basic doc stats
-       
+    // member variables
+    public String name;
+    public int sizeInmm;
+
+    private int percRemaining = 100;
     
-        // test bark()
-       
-        
-        // test findTreasure();
-       
-        
-        // test listenForCall()
-            
-        
+    public void simulateEating(int percentEaten){
+        percRemaining = percRemaining - percentEaten;
+    } // close method
     
-    } // close main()
+    public int getPercRemaining(){
+        return percRemaining;
+    } // close method
     
 } // close class
+
+
+
