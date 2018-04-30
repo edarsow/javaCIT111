@@ -23,37 +23,23 @@ package objects2_creatures;
 
 public class Creature {
 
+    // public member variables
     public String name;
     public String species;
-    
+    // private member variable
     private int biteSizeInPercent;
-    private int numBitesTaken;
-    private int sizeLimit;
-      
+
     // Method to simulate eating donut
-    public int eatDonut(SizedDonut donutToEat){
-        // we'll program guts here
-        return numBitesTaken;
+    public void eatDonut(SizedDonut donutToEat){
+        System.out.println("Creature.eatDonut | Inside");
+        // call the simulateEating method on the
+        // passed in SizedDonut Object
+        System.out.println(this.name + " is eating: " + biteSizeInPercent 
+                + "% of " + donutToEat.name);
+        donutToEat.simulateEating(biteSizeInPercent);
+        
     }
     
-    // "getter" method for a private member variable: sizeLimit
-    public int getSizeLimit() {
-        // just send back the value of sizeLimit
-        return sizeLimit;
-    }
-
-    // "setter" method for private member variable: sizeLimit
-    public void setSizeLimit(int sizeLimit) {
-        // we need guts to check for a reasonable size limit
-        this.sizeLimit = sizeLimit;
-    }
-
-    // "getter" for numBitesTaken
-    public int getNumBitesTaken() {
-        // just send back the value of numBitesTaken
-        return numBitesTaken;
-    }
-
     // "getter" method for biteSizeInPercent
     public int getBiteSizeInPercent() {
         return biteSizeInPercent;

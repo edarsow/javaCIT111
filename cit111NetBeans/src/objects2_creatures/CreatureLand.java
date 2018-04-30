@@ -17,9 +17,34 @@
 package objects2_creatures;
 
 /**
- *
+ * Class which demonstrates the creation
+ * and manipulation of Java Objects
  * @author delores
  */
-public class CreatureLand {
-    
-}
+
+
+
+
+
+
+
+public class CreatureLand { 
+    public static void main(String[] args) {
+        Creature penguin;
+        penguin = new Creature();
+        // writing member variable values
+        penguin.name = "Pablo";
+        penguin.species = "Emperor Penguin";
+        // NOTE: no sizeLimit member var or setter method
+        // on simplified Creature objects
+        penguin.setBiteSizeInPercent(5);
+        
+        SizedDonut donutForPenguin = new SizedDonut();
+        donutForPenguin.name = "Chloe";
+        donutForPenguin.sizeInmm = 32;
+        
+        // pass an instance of a SizedDonut object into 
+        // the eatDonut method on our Creature object
+        penguin.eatDonut(donutForPenguin);
+    } // close main
+} // close class

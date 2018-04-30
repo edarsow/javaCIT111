@@ -26,7 +26,14 @@ public class SizedDonut {
     private int percRemaining = 100;
     
     public void simulateEating(int percentEaten){
+        // debugging printlin
+        System.out.println("SizedDonut.simulateEating | Inside");
+        // subtract the percentEaten at this moment from existing
+        // amount of the SizedDonut
         percRemaining = percRemaining - percentEaten;
+        // print to console percent remaining
+        System.out.println("There is " + percRemaining + "% left");
+        
     } // close method
     
     public int getPercRemaining(){
