@@ -15,7 +15,9 @@
  * along wdonith this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package objects2_creatures;
+package objects_forteacher;
+
+import objects2_creatures.*;
 
 public class SizedDonut {
     

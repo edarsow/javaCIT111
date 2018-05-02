@@ -30,6 +30,7 @@ package objects2_creatures;
 
 public class CreatureLand { 
     public static void main(String[] args) {
+        System.out.println("CreatureLand.main | creating Creature ");
         Creature penguin;
         penguin = new Creature();
         // writing member variable values
@@ -37,14 +38,18 @@ public class CreatureLand {
         penguin.species = "Emperor Penguin";
         // NOTE: no sizeLimit member var or setter method
         // on simplified Creature objects
-        penguin.setBiteSizeInPercent(5);
+        penguin.setBiteSizeInPercent(-10);
         
+        System.out.println("CreatureLand.main | creating SizedDonut");
         SizedDonut donutForPenguin = new SizedDonut();
         donutForPenguin.name = "Chloe";
         donutForPenguin.sizeInmm = 32;
-        
+        System.out.println("CreatureLand.main | calling eatDonut");
         // pass an instance of a SizedDonut object into 
         // the eatDonut method on our Creature object
         penguin.eatDonut(donutForPenguin);
+        
+        System.out.println("CreatureLand.main | back after eating");
+        
     } // close main
 } // close class

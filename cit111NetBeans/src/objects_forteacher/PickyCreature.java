@@ -14,35 +14,41 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package objects2_creatures;
+package objects_forteacher;
+
+import objects2_creatures.SizedDonut;
 
 /**
  * Class to demonstrate Object fundamentals in Java
  * @author Eric Darsow
  */
 
-public class Creature {
+public class PickyCreature {
 
     // public member variables
     public String name;
     public String species;
     // private member variable
     private int biteSizeInPercent = 0;
+    private int minimumDonutSize;
 
     // Method to simulate eating donut
     public void eatDonut(SizedDonut donutToEat){
-        System.out.println("Creature.eatDonut | Eating " 
-                + biteSizeInPercent + "% of " + donutToEat.name);
-        // call the simulateEating method on the
-        // passed in SizedDonut Object
-        donutToEat.simulateEating(biteSizeInPercent);
         
-    }
+        if(donutToEat.sizeInmm >= minimumDonutSize){
+            System.out.println("Creature.eatDonut | Eating " 
+                    + biteSizeInPercent + "% of " + donutToEat.name);
+            donutToEat.simulateEating(biteSizeInPercent);
+        } else {
+            System.out.println("Creature.eatDonut | SizedDonut TOO SMALL! ");
+            
+        } // close if/else
+    } // close method
     
     // "getter" method for biteSizeInPercent
     public int getBiteSizeInPercent() {
         return biteSizeInPercent;
-    }
+    } // close method
     
     // setter method for biteSizeInPercent
     public void setBiteSizeInPercent(int sizeToSet) {
@@ -51,6 +57,23 @@ public class Creature {
         } else {
             System.out.println("SizedDonut.setBiteSizeInPercent | "
                     + "Ooops, negative values not allowed!" );
+        } // close if/else
+    } // close method
+
+    // "getter" method for accessing the value of this object's
+    // minumumDonutSize member variable
+    public int getMinimumDonutSize() {
+        return minimumDonutSize;
+    } // close method
+
+    // "setter" method that allows the user of this class
+    // to inject a value for the Creature's minimum 
+    // SizedDonut that it will take a bite of
+    public void setMinimumDonutSize(int minSizeToSet) {
+        if(minSizeToSet > 0){
+            this.minimumDonutSize = minSizeToSet;
+        } else {
+            System.out.println("Min SizedDonut size must be positive!");
         } // close if/else
     } // close method
     
