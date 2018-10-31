@@ -21,5 +21,17 @@ package quickreference;
  * @author delores
  */
 public class Operators {
+  public static void main(String[] args) {
+    int radiusEarth = 6000 + 378;
+    int radiusMoon = 2000 - 262;
+    int distBetween = 4641 - (radiusEarth + radiusMoon);
+    // Is distBetween even or odd?
+    // modulus operator % is the remainder after division
+    boolean even = (distBetween % 2) == 0;
+    double avgRadius = (double) radiusEarth / (double) radiusMoon;
+    String r = "r";
+    r = r.toUpperCase();
+    System.out.println(r);
+  }
     
 }

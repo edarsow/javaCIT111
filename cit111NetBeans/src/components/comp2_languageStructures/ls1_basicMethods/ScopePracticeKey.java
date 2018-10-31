@@ -24,7 +24,7 @@ public class ScopePracticeKey {
     
     // member variables (aka fields, class members)
     private static String hatType = "Baker's hat";
-    private static boolean davidInSubstrate = false;
+    private static boolean davidInSubstrate = false; 
     private static String alarm = "System alert!";
     
     public static void main(String[] args) {

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui;
+package components.comp4_storage.m1arrays;
 
 import java.awt.*;
 import java.awt.event.*;

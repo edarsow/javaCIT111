@@ -22,6 +22,12 @@ package components.comp2_languageStructures.ls1_basicMethods;
  */
 public class ScopePractice {
     
+    // UNCOMMENT for printing
+    
+    
+    /**
+           
+    
     // member variables (aka fields, class members)
     private static String hatType = "Baker's hat";
     private static boolean davidInSubstrate = false;
@@ -64,4 +70,6 @@ public class ScopePractice {
                 + davidInSubstrate + "]");
     } // close toggleDavidCondition method
     
+    * 
+    * */
 } // close class ScopePracticeKey

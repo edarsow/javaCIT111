@@ -20,9 +20,12 @@ public class HelloWorld {
     
     public static void main(String[] args) {
         System.out.println("Hello, World!");
-        int planets = 9;
-        double distanceToSun = 4532332.89;
-        boolean alienLife = true;
-        String password = "sparkles";
+        int orderFromSun = 3;
+        double distanceToSun = 150000000;
+        boolean sustainsLife = true;
+        String planetName = "Earth";
+        System.out.println(planetName + " avgs " +
+                distanceToSun + "km to the Sun");
     } // close main method
 } // close class HelloWorld
+  
