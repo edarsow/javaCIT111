@@ -58,7 +58,7 @@ public class RefactorTheRing {
             System.out.println("No copy made; " + viewer1 + " is toast");
             numViewersSwallowedByRing = numViewersSwallowedByRing + 1;
         }
-        
+         
         randomMachine = new Random();
         madeCopy = randomMachine.nextBoolean();
         
