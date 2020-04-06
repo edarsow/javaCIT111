@@ -28,13 +28,31 @@ import java.util.Random;
 
 public class KennywoodRideTrackerBare {
    
-       
+   // Member variables; they will all have private static [type] [var name]
+   // we'll initialize all to zero
+  private static int totalRiders = 0;
+  private static int totalFailedRiders = 0;
+  private static int totalSickRiders = 0;
+
+  // named constant values; never change (i.e. final)
+  final static int MIN_HEIGHT_THRILL = 50;
+  final static int MIN_HEIGHT_THEME = 34;
+
     public static void main(String[] args){
-      
+      System.out.println("In Main");
+      rideBlackWidow(10, 60);
+      printRiderStats();
+      rideBlackWidow(4, 60);
+      printRiderStats();
+      rideBlackWidow(342, 60);
+      printRiderStats();
     } // close main()
     
     public static void rideBlackWidow(int riders, int avgHeight){
-        
+        System.out.println("Riding Black Widow!!!");
+        // adding incoming riders to my member variable tracking totalRiders
+        totalRiders = totalRiders + riders;
+
     } // close method
     
     public static void rideMerryGoRound(int riders, int avgHeight){
@@ -42,8 +60,7 @@ public class KennywoodRideTrackerBare {
     } // close method
     
     public static void printRiderStats(){
-       
+       System.out.println("total riders: " + totalRiders);
     } // close method
     
 } // close class
-
